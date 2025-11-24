@@ -186,7 +186,7 @@
                 
                 // Cập nhật UI thủ công: Tạo ID mới giả vì API luôn trả về 11
                 const newUser = { ...userData, id: users.length > 0 ? Math.max(...users.map(u => u.id)) + 1 : 1 };
-                users.unshift(newUser); // Thêm vào đầu danh sách
+                users.push(newUser);
                 alert("Thêm mới thành công (Fake)!");
             }
 
